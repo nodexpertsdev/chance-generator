@@ -1,6 +1,6 @@
 Package.describe({
   name: 'nodexpert:chance-generator',
-  version: '1.0.0',
+  version: '1.0.1',
   summary: 'Generator for list of random data using Chance',
   git: 'https://github.com/nodexpertsdev/chance-generator',
   documentation: 'README.md'
