@@ -35,7 +35,6 @@ To generate list of random items, you can call ChanceGenerator's `generate` func
 
 For all the functions ChanceJS provide and their options, please refer to their [docs](http://chancejs.com/).
 
-
 ## Usage
 
 Now the million dollar question, when do you use ChanceGenerator, as you can simply use ChanceJS from npm. First of all, it removes the hassle of creating multiple items from ChanceJS as it only gives one value at a time. For eg, you want to test your application which sorts users of the USA based on their states, you can use the following snippet to generate random dummy data.
@@ -50,6 +49,8 @@ if (Meteor.isClient) {
       };
   ChanceGenerator.generate(name, times, params)
 }
+
+npm run test
 ```
 
 It also has some additional features other than ChanceJS functions like generating range of user defined dates instead of some random dates which ChanceJS generates.
@@ -87,3 +88,17 @@ This feature will take only 3 parameters,
   - type : String
   - default value : 1
   - sample values : 1, 2, 3,....
+
+
+  ## Running the test
+
+  Command to check whether modules are working as it is intended to do.
+
+```
+  nodexpert:chance-generator$ npm run test
+```
+  ## Linting of package
+  Command to analyse the code for potential errors via lint.
+```
+  nodexpert:chance-generator$ npm run lint
+```
