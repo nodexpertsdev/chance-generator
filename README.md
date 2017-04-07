@@ -90,7 +90,7 @@ This feature will take only 3 parameters,
   - sample values : 1, 2, 3,....
 
 
-  ## Running the test
+## Running the test
 
   Command to check whether modules are working as it is intended to do.
 
