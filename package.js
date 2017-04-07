@@ -1,3 +1,5 @@
+/* eslint-disable prefer-arrow-callback*/
+
 Package.describe({
   name: 'nodexpert:chance-generator',
   version: '1.0.1',
@@ -7,10 +9,11 @@ Package.describe({
 });
 
 Npm.depends({
-  chance: '1.0.4'
+  chance: '1.0.6',
+  chai: '3.5.0'
 });
 
-Package.onUse(function(api) {
+Package.onUse(function (api) {
   api.versionsFrom('1.4');
 
   api.use(['ecmascript']);
@@ -22,4 +25,15 @@ Package.onUse(function(api) {
     'api/context.js',
     'api/config.js'
   ], 'client');
+});
+
+Package.onTest(function (api) {
+  const packages = ['ecmascript', 'dispatch:mocha'];
+  api.use(packages, 'server');
+
+  api.addFiles([
+    'test/context.tests.js',
+    'test/dates.tests.js',
+    'test/validate.tests.js'
+  ], 'server');
 });

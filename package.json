@@ -1,0 +1,21 @@
+{
+  "name": "chance-generator",
+  "version": "1.0.1",
+  "description": "Generator for list of random data using Chance",
+  "main": "index.js",
+  "dependencies": {
+    "chance": "^1.0.6"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "TEST_WATCH=1 meteor test-packages ./ --driver-package dispatch:mocha",
+    "lint": "eslint './**/*.js'"
+  },
+  "author": "nodexpertsdev",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0"
+  }
+}
